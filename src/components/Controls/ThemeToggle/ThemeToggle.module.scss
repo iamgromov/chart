@@ -1,0 +1,7 @@
+@use '../../../scss/variables' as *;
+
+.toggle {
+  &__button {
+    font-size: $font-size-md;
+  }
+}

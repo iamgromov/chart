@@ -1,0 +1,92 @@
+@use '../variables' as *;
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-background);
+  border-radius: 4px;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+
+  appearance: none;
+  background: transparent;
+  border: none;
+
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  color: inherit;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+
+  vertical-align: middle;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  outline: none;
+
+  list-style: none;
+
+  &::selection {
+    background-color: var(--color-background);
+  }
+}
+
+html {
+  scrollbar-gutter: stable both-edges;
+  text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-background);
+
+  color: var(--color-text-primary);
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+span,
+p,
+b,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--color-text-primary);
+}
+
+a {
+  text-decoration: none;
+}

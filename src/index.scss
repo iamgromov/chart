@@ -1,0 +1,8 @@
+@use './scss/variables' as vars;
+@use './scss/mixins' as mixins;
+@use './scss/fonts';
+@use './scss/libs/normalize';
+
+body {
+  font-family: 'Proxima Nova', Roboto, system-ui, Tahoma, sans-serif;
+}

@@ -1,0 +1,80 @@
+@use '../scss/variables' as *;
+@use '../scss/mixins' as *;
+
+.app {
+  min-width: $breakpoint-mobile;
+  padding: $spacing-xl;
+
+  background: var(--color-background);
+
+  @include theme-transition(background);
+
+  @include mobile {
+    padding: $spacing-md;
+  }
+
+  &__header {
+    max-width: $breakpoint-max;
+    margin: 0 auto $spacing-xl;
+
+    @include flex-between;
+  }
+
+  &__title {
+    margin: 0;
+
+    font-size: $font-size-lg;
+    font-weight: 600;
+    color: var(--color-text-primary);
+
+    @include theme-transition(color);
+  }
+
+  &__main {
+    flex: 1;
+    gap: $spacing-xl;
+
+    width: 100%;
+    max-width: $breakpoint-max;
+    margin: 0 auto;
+
+    @include flex-column;
+  }
+
+  &__controls {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: $spacing-lg;
+
+    @include flex-between;
+  }
+
+  &__controls-left {
+    display: flex;
+
+    flex: 1;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: $spacing-sm;
+
+    min-width: 250px;
+  }
+
+  &__controls-right {
+    display: flex;
+
+    align-items: flex-end;
+    gap: $spacing-sm;
+  }
+
+  &__chart {
+    flex: 1;
+
+    width: 100%;
+    min-height: 400px;
+
+    @include mobile {
+      min-height: 300px;
+    }
+  }
+}
