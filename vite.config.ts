@@ -12,6 +12,7 @@ export default defineConfig({
       },
     }),
   ],
+  base: '/chart',
   build: {
     outDir: 'dist',
     manifest: true,
